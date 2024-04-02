@@ -112,7 +112,7 @@ extension PlanDateViewController: SearchClientDelegate {
   }
 
   public func searchClient(_ searchClient: SearchClient,
-                           didCompleteSelection categoryToBusiness: [YelpCategory: YLPBusiness]) {
+													 didCompleteSelection categoryToBusiness: [YelpCategory: YLPBusiness]) {
     let viewController = ReviewDateDetailsViewController
       .instanceFromStoryboard(with: categoryToBusiness, delegate: self)
     navigationController?.pushViewController(viewController, animated: true)

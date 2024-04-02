@@ -39,7 +39,7 @@ public protocol SearchColleague: AnyObject {
 	
 	func update(userCoordinate: CLLocationCoordinate2D)
 	
-	func fellowColleague(_ colluague: SearchColleague,
+	func fellowColleague(_ colleague: SearchColleague,
 											 didSelect business: YLPBusiness)
 	
 	func reset()
